@@ -26,10 +26,12 @@ if (itemAvailable && !userBlocked) {
 }
 
 
-const role = "admin";
+//const role = "admin";
+//const role = "lecturer";
+const role = "student";
 
-if (role == "student") {
-    console.log("Laptop apprved");
+if (role === "admin" || role === "lecturer") {
+    console.log("Laptop apprved");      
 }else {
     console.log("Laptop not allowed");
 }
